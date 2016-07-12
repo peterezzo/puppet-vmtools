@@ -4,12 +4,12 @@ class vmwaretools {
   case $::osfamily {
     'Debian': {
       package { 'open-vm-tools':
-        ensure => 'latest'
+        ensure => 'latest',
       }
     }
     'RedHat': {
       package { 'net-tools':
-        ensure => 'present'
+        ensure => 'present',
       }
       package { 'open-vm-tools':
         ensure  => 'latest',
@@ -19,4 +19,5 @@ class vmwaretools {
     default: {
       fail("The ${module_name} module is not supported on an ${::osfamily} based system.")
     }
+  }
 }
