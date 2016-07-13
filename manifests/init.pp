@@ -1,5 +1,7 @@
 # vmwaretools class simply installs open-vm-tools, included by hiera virtual
 class vmwaretools {
+  require base  # dns/proxy setup in base
+
   # i have a suspicion this script will blow up on RHEL but haven't actually tried it
   case $::osfamily {
     'Debian': {
