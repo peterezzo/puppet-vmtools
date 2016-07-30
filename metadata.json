@@ -1,9 +1,9 @@
 {
-  "name": "peterezzo-vmwaretools",
+  "name": "peterezzo-vmtools",
   "version": "0.0.1",
   "summary": "Puppet module for vmwaretools",
   "author": "Pete Ezzo",
-  "description": "This module installs open-vm-tools ",
+  "description": "This module installs open-vm-tools",
   "dependencies": [
 
   ],
@@ -21,5 +21,5 @@
     }
    ],
   "source": "https://github.com/peterezzo/lab-puppet",
-  "license": "None"
+  "license": "MIT"
 }
