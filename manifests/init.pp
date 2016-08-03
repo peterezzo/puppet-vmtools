@@ -1,6 +1,6 @@
 # vmwaretools class simply installs open-vm-tools if necessary
 # include everywhere and only run where virtual
-class vmwaretools {
+class vmtools {
   if $::virtual == 'vmware' {
     case $::osfamily {
       'Debian': {
